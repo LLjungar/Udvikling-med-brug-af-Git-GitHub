@@ -4,6 +4,16 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+h1 {
+    font-size: 1.3em; /* Gør h1 større. Juster værdien efter behov. */
+    font-weight: bold; /* Gør teksten fed. */
+}
+
+h2 {
+    font-size: 1em; /* Gør h2 mindre end h1. Juster værdien efter behov. */
+    font-weight: normal;
+}
+
 
 /* styler øvre/upper headerdel til flex får at rykke indhold til højre*/
 .upper-header {
@@ -40,4 +50,25 @@ body {
     font-size: xx-large;
 }
 
+.banner img {
+    width: 100%; /* Gør billedet fuld bredde */
+    height: 6cm; /* Fast højde på ca. 6 cm */
+    object-fit: cover; /* Sikrer at billedet dækker området uden at miste proportioner */
+}
 
+.sub-header {
+    background-color: #779882; /* Din specifikke grønne farve */
+    padding: 1px; /* Tilføjer lidt plads omkring teksten */
+    text-align: center; /* Centrerer teksten */
+}
+
+.sub-header h1 {
+    color: #FFFFFF;
+    margin: 0;
+    padding-top: 0.3em;
+}
+.sub-header h2 {
+    color: #FFFFFF; /* Hvid tekst, juster efter behov */
+    margin: 0; /* Fjerner standardmargen */
+    padding-bottom: 0.5em; /* Tilføjer lidt vertikal plads, juster efter behov */
+}
