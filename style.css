@@ -140,3 +140,43 @@ button {
 button:hover {
     background-color: #5f756b;
 }
+
+
+.final-section {
+    text-align: center;
+    padding: 2em;
+    background-color: #FFFFFF; /* Du kan ændre denne farve efter behov */
+}
+
+.section-title {
+    font-size: 1.1em;
+    color: #425348;
+}
+
+.final-section h1 {
+    margin-bottom: 0.5em; /* Reducerer afstanden mellem h1 og p */
+}
+
+.final-section p {
+    margin-top: 2em;
+    margin-bottom: 2em; /* Afstand mellem paragrafen og knappen */
+    margin-left: 3em;
+    margin-right: 3em;
+    font-size: smaller;
+    text-align: left;
+}
+
+.cta-long-text {
+    background-color: #779882; /* Baggrundsfarve */
+    color: white; /* Tekstfarve */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; 
+    font-size: 0.7em; 
+    font-weight: bold;
+    width: 42%;
+}
+
+.cta-long-text:hover {
+    background-color: #667e70; /* Mørkere farve ved hover */
+}
