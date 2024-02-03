@@ -145,8 +145,7 @@ button:hover {
 .final-section {
     text-align: center;
     padding: 2em;
-    background-color: #FFFFFF; /* Du kan ændre denne farve efter behov */
-}
+    background-color: #FFFFFF; 
 
 .section-title {
     font-size: 1.1em;
@@ -154,12 +153,12 @@ button:hover {
 }
 
 .final-section h1 {
-    margin-bottom: 0.5em; /* Reducerer afstanden mellem h1 og p */
+    margin-bottom: 0.5em; 
 }
 
 .final-section p {
     margin-top: 2em;
-    margin-bottom: 2em; /* Afstand mellem paragrafen og knappen */
+    margin-bottom: 2em; 
     margin-left: 3em;
     margin-right: 3em;
     font-size: smaller;
@@ -167,8 +166,8 @@ button:hover {
 }
 
 .cta-long-text {
-    background-color: #779882; /* Baggrundsfarve */
-    color: white; /* Tekstfarve */
+    background-color: #779882; 
+    color: white; 
     border: none;
     border-radius: 10px;
     cursor: pointer; 
@@ -178,5 +177,5 @@ button:hover {
 }
 
 .cta-long-text:hover {
-    background-color: #667e70; /* Mørkere farve ved hover */
+    background-color: #667e70; 
 }
