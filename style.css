@@ -1,21 +1,20 @@
-/* margin på 0 for at siden fyldes ud. system-ui indeholder den ønskede skrifttype */
+/* margin på 0 for at siden fyldes ud. system-ui indeholder den ønskede skrifttype - eller noget*/
 body {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 h1 {
-    font-size: 1.3em; /* Gør h1 større. Juster værdien efter behov. */
+    font-size: 1.1em; /* Gør h1 større. Juster værdien efter behov. */
     font-weight: bold; /* Gør teksten fed. */
 }
 
 h2 {
-    font-size: 1em; /* Gør h2 mindre end h1. Juster værdien efter behov. */
+    font-size: 0.9em;
     font-weight: normal;
 }
 
-
-/* styler øvre/upper headerdel til flex får at rykke indhold til højre*/
+/*deler headeren op i upper og lower for at style hver for sig*/
 .upper-header {
     background-color: #F3F4EF;
     display: flex;
@@ -25,7 +24,6 @@ h2 {
     font-size: xx-small;
 }
 
-/* styler den nedre/lower header til flex for at give plads til både logo og ikon. Justeres med padding*/
 .lower-header {
     background-color: #779882;
     display: flex;
@@ -34,30 +32,27 @@ h2 {
     padding: 1px 10px; 
 }
 
-/* farver teksten/mini nav i "upper" delen af header sort*/
 .language-selector {
     color: #333; 
 }
 
-/* farver logo og burgermenuikon sort/
 .logo, .burger-menu {
     color:black;
 }
 
-/* cursor skrifter til hånd i hover og større burgermenuikon*/
 .burger-menu {
     cursor: pointer;
     font-size: xx-large;
 }
 
-/* Styler billede*/
+/*billede*/
 .banner img {
     width: 100%; 
-    height: 6cm; 
+    height: 15em; 
     object-fit: cover; 
 }
-/*kan ikke lige se hvorfor der er mellemrum her... Men det er der så*/
-/*styler overskrift. Kan ikke finde ud af om den skal være i header eller main. Hermed sub-header*/
+/*ignorer irriterende mellemrum der ikke er til at lokalisere*/
+/*styler overskrift. Kan ikke finde ud af om den skal være i header eller main. så sub-header*/
 .sub-header {
     background-color: #779882; 
     text-align: center; 
@@ -84,18 +79,19 @@ h2 {
 }
 
 
-/* Nu får de bare lige meget plads, det bliver ved med at se forkert ud alligevel*/
+/* Nu får de bare lige meget plads, det bliver ved med at se forkert ud alligevel ha*/
 .text-content,
 .form-container {
     width: 50%; 
 }
 
 .text-content {
-    font-size:smaller;
+    font-size:0.7em;
 }
 
 .text-content h1 {
     color: #425348;
+    font-size: 1.5em;
 }
 
 .form-container {
@@ -104,6 +100,7 @@ h2 {
     border-radius: 30px;
     padding: 1em;
     margin-top: 2em;
+    margin-left: 2.5em;
     display: flex;
     flex-direction: column; 
     align-items: center; 
@@ -117,12 +114,24 @@ h2 {
     margin-right: 1em;
 }
 
+.form-container input[type="text"],
+.form-container input[type="email"] {
+    font-size:; 
+}
+
 .form-group input {
     width: 90%; 
     padding: 0.5em;
     border-radius: 10px;
     border: none;
     outline: none;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"] {
+    font-size: xx-small; 
+    padding: 0.9em; 
+    border-radius: 10px;
 }
 
 button {
@@ -142,13 +151,15 @@ button:hover {
 }
 
 
+/*Sidste del af main*/
 .final-section {
     text-align: center;
     padding: 2em;
     background-color: #FFFFFF; 
+}
 
 .section-title {
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: #425348;
 }
 
@@ -161,7 +172,7 @@ button:hover {
     margin-bottom: 2em; 
     margin-left: 3em;
     margin-right: 3em;
-    font-size: smaller;
+    font-size:0.7em;
     text-align: left;
 }
 
@@ -178,4 +189,33 @@ button:hover {
 
 .cta-long-text:hover {
     background-color: #667e70; 
+}
+
+
+/*her styler jeg footer*/
+footer {
+    width: 100%;
+}
+
+.footer-green {
+    background-color: #425348;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 4em;
+    text-align: center;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-around; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-link {
+    color: white; 
+    text-decoration: none; 
+    font-size: 16px; 
 }
